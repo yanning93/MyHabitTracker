@@ -11,7 +11,12 @@ import SwiftUI
 struct MyHabitTrackerApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            VStack(spacing: 20) {
+                TimeDisplayView()
+                    .padding(.top)
+                
+                CalendarView()
+            }
         }
     }
 }
